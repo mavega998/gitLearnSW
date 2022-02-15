@@ -29,9 +29,9 @@ Algunos de los comandos mas comúnes que nos escontramos en el día a día usand
 * ```git init``` Este comando se usa para inicializar un repositorio con **GIT**.
 * ```git status``` Con este comando podemos saber que archivos no les está dando seguimiento **GIT** o aquellos que han sido modificados.
 * ```git add .``` Este comando prepara todos los archivos del repositorio y los sube al stage para que **GIT** les haga seguimiento.
-* ```git commit -m ""` Con este comando hacemos una captura por asi llamarlo de como tenemos nuestro código hasta ese momento en el cual hacemos nuestro commit.
+* ```git commit -m ``` Con este comando hacemos una captura por asi llamarlo de como tenemos nuestro código hasta ese momento en el cual hacemos nuestro commit.
 * ```git branch``` Este comando nos muestra todas las ramas que tengo en el repo (mas adelante estaremos viendo ¿cómo crear ramas?).
-* ```git clone <link>` Con este comando podemos descargar el código fuente desde un repositorio remoto y tenerlo en nuestro pc localmente.
+* ```git clone <link>``` Con este comando podemos descargar el código fuente desde un repositorio remoto y tenerlo en nuestro pc localmente.
 * ```git push``` Este comando lo ejecutamos luego de hacer un **commit**, el siguiente paso es subir los cambios al servidor remoto. En otras palabras envia tus commits al repositorio remoto
 
 ### Versionado
@@ -43,7 +43,7 @@ En **GIT** tenemos la posibilidad de crear versiones especificas de nuestro repo
 
 ##### CREAMOS UN RELEASE TAG ASI:
 * ```git tag``` no regresa nada, lo cual es correcto.
-* ```git tag -a v1.0.0 -m "fin de la secion"``` creo una version anotada //ya se puede usar.
+* ```git tag -a v1.0.0 -m "Mi versión"``` creo una version anotada //ya se puede usar.
 * ```git push --tags``` lo subimos a git finalmente.
 
 ### ¿Cómo crear ramas?
