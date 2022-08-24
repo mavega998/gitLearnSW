@@ -51,7 +51,29 @@ Para crear una rama en git es muy sencillo, para ellos usaremos el siguiente com
 * ```git branch <nombre_rama>```
 
 ### Realizar commit semantico
+Para crear los commits semanticos simplemente debe usar los siguientes tipos:
+- feat: Cuando un commit agrega una nueva característica a nuestro software o evoluciona una existente.
+- fix: Cuando el commit representa una corrección a un error en el código de la aplicación.
+- docs: Cuando añadamos documentación al proyecto o hagamos cambios sobre la existente.
+- style: Cuando hay cambios de formato (guía de estilo), se ha olvidado un paréntesis o llave, etc… No se altera el código de producción
+- refactor: Cuando se modifica el código de producción, por ejemplo renombrar una variable, simplificar un método, añadir un early return, etc…
+- test: Cuando se añaden o modifican tests. No se altera el código de producción.
+- chore: Para tareas rutinarias, por ejemplo actualizar composer, tareas de gulp, modificar el .gitignore, etc… No se altera el código de producción.
+```bash
+git commit -m "feat: add hat wobble"
+               ^--^  ^------------^
+               |     |
+               |     +-> # Corta descripción para los cambios
+               +-> # Tipo: chore, docs, feat, fix, refactos, style o test.
+```
 
+Para dar mas detalle o contexto al mensaje se agrega entre parentecis el tipo de commit.
+
+```bash
+git commit -m "feat(lang): added polish language"
+```
+
+Fuente: [Desarrollo en WordPress](https://desarrollowp.com/blog/tutoriales/aprende-git-de-manera-sencilla-commits-semanticos/)
 ### Pull Request
 
 ### Merge
